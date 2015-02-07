@@ -74,40 +74,31 @@
 
 <body>
   <header class="header-primary">
-    <h1 class="logo-secondary">Sulanca Club</h1>
+    <h1 id="logo-primary" class="logo-primary">Sulanca Club</h1>
 
     <nav id="nav-primary" class="nav-primary">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#home" class="nav-link" data-track="nav-home" title="Home">Home</a>
+          <a href="http://www.sulancaclub.com/blog" class="nav-link" data-track="nav-blog" title="Blog">Blog</a>
         </li>
 
         <li class="nav-item">
-          <a href="#about" class="nav-link" data-track="nav-about" title="About">About</a>
+          <a href="http://loja.sulancaclub.com" class="nav-link" data-track="nav-loja-online" title="Loja Online">Loja Online</a>
         </li>
 
         <li class="nav-item">
-          <a href="#social" class="nav-link" data-track="nav-social" title="Social">Social</a>
+          <a href="#pontos-venda" class="nav-link anchor" data-track="nav-pontos-venda" title="Pontos de Venda">Pontos de Venda</a>
         </li>
 
         <li class="nav-item">
-          <a href="#contact" class="nav-link" data-track="nav-contact" title="Contact">Contact</a>
+          <a href="#contact" class="nav-link anchor" data-track="nav-contato" title="Contato">Contato</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main id="main" class="main">
-    <section id="home" class="section home">
-      <h2 class="section-title">Aqui vem um título para sua sessão</h2>
-      <p class="section-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit recusandae amet error eligendi ab, consequatur delectus molestias minus aliquid vel sequi facilis, itaque a veritatis molestiae doloremque hic incidunt pariatur sit, voluptatem unde non totam! Ducimus autem mollitia nulla voluptatibus.
-
-        <br><br>
-
-        <a href="#modal" class="link modal">Aqui vem um link pro modal.</a>
-      </p>
-
+    <section class="section home">
       <div id="slide" class="slide-primary">
         <figure class="slide-image">
           <img src="http://dummyimage.com/800x350/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
@@ -123,65 +114,28 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <h2 class="section-title">Pequeno título</h2>
-      <p class="section-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio nihil assumenda facere quasi minus molestiae ducimus perferendis ratione numquam.
-      </p>
+    <section id="blog" class="section blog">
+      <article id="last-posts" class="last-posts"></article>
 
-      <a href="request.html" class="link request" title="Clique para fazer a requisição de um arquivo externo">
-        Link para request de arquivos externos.
-      </a>
+      <aside id="player" class="player"></aside>
+    </section>
 
-      <div id="request"></div>
+    <section id="last-products" class="section last-products">
+      <h2 class="section-title">Últimos Produtos</h2>
+    </section>
 
-      <article class="post">
-        <div class="post-content">
-          <h3>Título do meu post</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cupiditate eligendi quisquam atque, possimus, voluptates quam nulla quas libero, vero, nisi architecto. Animi sequi possimus doloribus, nostrum odit labore aspernatur consectetur non ratione asperiores odio saepe, minima perspiciatis quasi voluptate? Porro rem a culpa possimus velit, nihil facere voluptatem at unde ipsam vel voluptatum aliquam, dolorem, mollitia dignissimos perspiciatis fuga?
-          </p>
-        </div>
-
-        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 1!">
-          <figure class="post-image">
-            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-
-            <figcaption>Legenda da imagem</figcaption>
-          </figure>
-        </a>
-      </article>
-
-      <article class="post">
-        <a class="lightbox" rel="about" href="http://dummyimage.com/800x600/4d494d/686a82.gif" title="Meu Lightbox 2!">
-          <figure class="post-image">
-            <img src="http://dummyimage.com/424x202/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-
-            <figcaption>Legenda da imagem</figcaption>
-          </figure>
-        </a>
-
-        <div class="post-content">
-          <h3>Título do meu post</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cupiditate eligendi quisquam atque, possimus, voluptates quam nulla quas libero, vero, nisi architecto. Animi sequi possimus doloribus, nostrum odit labore aspernatur consectetur non ratione asperiores odio saepe, minima perspiciatis quasi voluptate? Porro rem a culpa possimus velit, nihil facere voluptatem at unde ipsam vel voluptatum aliquam, dolorem, mollitia dignissimos perspiciatis fuga?
-          </p>
-        </div>
-      </article>
+    <section id="pontos-venda" class="section pontos-venda">
+      <h2 class="section-title">Pontos de Venda</h2>
     </section>
 
     <section id="social" class="section social">
       <h2 class="section-title">Instagram</h2>
-      <p class="section-description">Acompanhe nosso perfil no instagram e fique por dentro dos novos modelos.</p>
       <aside id="feeds-instagram" class="feeds instagram"></aside>
     </section>
 
     <section id="contact" class="section contact">
       <div class="content">
-        <h2 class="section-title">Mais um título</h2>
-        <p class="section-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fugiat alias eum labore adipisci, quas, aliquam consequuntur ratione nam, tenetur, eaque minus quia illum optio?
-        </p>
+        <h2 class="section-title">Contato</h2>
 
         <form id="contact-form" class="contact-form">
           <input id="contact-name" type="text" name="contact-name" class="input-primary medium" placeholder="Your Name" required>
@@ -193,8 +147,8 @@
     </section>
   </main>
 
-  <footer class="footer-primary">
-    <a href="#fork-github" id="back-top" class="back-top">Top</a>
+  <footer id="footer" class="footer-primary">
+    <a href="#logo-primary" id="back-top" class="back-top anchor">Top</a>
 
     <aside class="social-share">
       <ul class="social-list">
@@ -204,16 +158,13 @@
       </ul>
     </aside>
 
-    <p>Copyright © 2015. Made with beer and love.</p>
+    <figure class="logo-secondary">
+      <img src="" alt="">
+    </figure>
+
+    <p>Copyright ©Sulanca Club - Todos os direitos reservados.</p>
   </footer>
 
-
-  <!-- SVG Blur Filter -->
-  <svg id="svg-filter">
-    <filter id="svg-blur">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
-    </filter>
-  </svg>
 
   <!-- Templates -->
   <script id="instagram-template" type="text/x-handlebars-template">
