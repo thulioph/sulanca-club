@@ -8,7 +8,7 @@ APP.Instagram = {
     var that, limit, size, user, url, clientId;
 
     that        = this;
-    limit       = 8;
+    limit       = 14;
     user        = '1343762866';
     clientId    = 'd8620946db974380820e9264a4a4482d';
     url         = 'https://api.instagram.com/v1/users/'+ user +'/media/recent?client_id=' + clientId + '&access_token='+ '';
