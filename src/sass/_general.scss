@@ -400,6 +400,10 @@ body {
 
 .contact-form { margin-top: 30px; }
 
+.feedback {
+  &.js-error { color: $color-primary; }
+}
+
 
 
 // footer

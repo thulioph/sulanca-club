@@ -793,7 +793,12 @@ body.js-offline::after {
   margin-top: 30px;
 }
 
-/* line 406, ../../src/sass/_general.scss */
+/* line 404, ../../src/sass/_general.scss */
+.feedback.js-error {
+  color: #ef3338;
+}
+
+/* line 410, ../../src/sass/_general.scss */
 .social-item {
   width: 280px;
   border: 1px solid #eaeaea;
@@ -802,7 +807,7 @@ body.js-offline::after {
   margin: 70px 10px 0 0;
 }
 
-/* line 414, ../../src/sass/_general.scss */
+/* line 418, ../../src/sass/_general.scss */
 .social-link {
   line-height: 45px;
   display: block;
@@ -817,12 +822,12 @@ body.js-offline::after {
   -o-transition: all 0.2s 0s ease-out;
   transition: all 0.2s 0s ease-out;
 }
-/* line 424, ../../src/sass/_general.scss */
+/* line 428, ../../src/sass/_general.scss */
 .social-link:hover {
   background-color: #dddbdb;
 }
 
-/* line 430, ../../src/sass/_general.scss */
+/* line 434, ../../src/sass/_general.scss */
 .back-top {
   width: 50px;
   height: 50px;
@@ -856,11 +861,11 @@ body.js-offline::after {
   -o-transition: opacity 0.2s 0s linear;
   transition: opacity 0.2s 0s linear;
 }
-/* line 452, ../../src/sass/_general.scss */
+/* line 456, ../../src/sass/_general.scss */
 .back-top.js-show {
   opacity: 1;
 }
-/* line 454, ../../src/sass/_general.scss */
+/* line 458, ../../src/sass/_general.scss */
 .back-top:hover {
   opacity: .5;
 }

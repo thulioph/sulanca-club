@@ -9,15 +9,21 @@ APP.Contact = {
   },
 
   submitForm: function() {
-    var formdata, that, email;
+    var formdata, that, nome, email, mensagem;
 
     that = this;
 
     $('#contact-form').on('submit', function(event) {
       event.preventDefault();
+      nome = $('#contact-name').val(),
+      email = $('#contact-email').val(),
+      mensagem = $('#contact-textarea').val();
 
-      formdata = $('#contact-form').serialize();
-      email = $('#contact-email').val();
+      formdata = {
+        nome: nome,
+        email: email,
+        mensagem: mensagem
+      };
 
       that.checkStatus(email, formdata);
     });
@@ -40,15 +46,20 @@ APP.Contact = {
       data: formdata,
 
       beforeSend: function() {
-        console.log('Sending...');
+        $('#feedback').fadeIn();
+        $('#feedback').html('Enviando...');
       },
 
       success: function(data) {
-        console.log(data);
+        $('#contact-form')[0].reset();
+        $('#feedback').fadeIn();
+        $('#feedback').html(data);
       },
 
       error: function(error) {
-        console.warn(error);
+        $('#feedback').addClass('js-error');
+        $('#feedback').fadeIn();
+        $('#feedback').html(error);
       }
     });
   }
