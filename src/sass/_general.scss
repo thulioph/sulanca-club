@@ -16,7 +16,7 @@ body {
       top: 0;
       left: 0;
       text-align: center;
-      color: $bg-featured;
+      // color: $bg-featured;
       font-size: $fs-small;
       line-height: $fs-small;
       font-family: $ff-primary;
@@ -29,14 +29,14 @@ body {
 }
 
 ::-moz-selection {
-  background: $bg-featured;
-  color: $link-primary;
+  // background: $bg-featured;
+  // color: $link-primary;
   text-shadow: none;
 }
 
 ::selection {
-  background: $bg-featured;
-  color: $link-primary;
+  // background: $bg-featured;
+  // color: $link-primary;
   text-shadow: none;
 }
 
@@ -47,23 +47,23 @@ body {
 
 .header-primary {
   width: 100%;
-  height: 385px;
+  height: 165px;
   position: relative;
   padding-top: 20px;
-  background-color: $bg-primary;
+  // background-color: $bg-primary;
 }
 
 .main {
   width: 100%;
   min-height: 800px;
   display: block;
-  background-color: $bg-clean;
+  // background-color: $bg-clean;
 }
 
 .logo {
   font-family: $ff-project;
   font-size: ($fs-extra-large)+2;
-  color: $bg-featured;
+  // color: $bg-featured;
   text-align: center;
   height: 250px;
   line-height: 320px;
@@ -73,12 +73,12 @@ body {
 .footer-primary {
   position: relative;
   width: 100%;
-  min-height: 245px;
+  min-height: 450px;
   text-align: center;
-  background-color: $bg-primary;
+  // background-color: $bg-primary;
 
   p {
-    color: $bg-featured;
+    // color: $bg-featured;
     font-size: ($fs-extra-small)-.2;
     font-family: $ff-primary;
     display: inline-block;
@@ -89,7 +89,7 @@ body {
 
 .social-item {
   width: 280px;
-  border: 1px solid $bg-featured;
+  // border: 1px solid $bg-featured;
   height: 45px;
   display: inline-block;
   margin: 70px 10px 0 0;
@@ -100,14 +100,14 @@ body {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: $border-primary;
+  // color: $border-primary;
   font-family: $ff-general;
   font-size: ($fs-extra-small)-.2;
   @include transition(all, .2s, 0s, ease-out);
 
   &:hover {
-    background-color: $border-primary;
-    color: $bg-primary;
+    // background-color: $border-primary;
+    // color: $bg-primary;
   }
 }
 
@@ -125,7 +125,7 @@ body {
   @include rotate(-90deg);
   @include bdr(4px);
 
-  background-color: $border-primary;
+  // background-color: $border-primary;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px 40px;
@@ -145,8 +145,8 @@ body {
   width: 100%;
   margin-top: 75px;
   text-align: center;
-  border-bottom: 1px solid $border-primary;
-  background-color: $bg-featured;
+  // border-bottom: 1px solid $border-primary;
+  // background-color: $bg-featured;
 
   &.js-nav-active {
     position: fixed;
@@ -159,9 +159,9 @@ body {
   display: inline-block;
 
   &.js-nav-active {
-    background-color: $link-primary;
+    // background-color: $link-primary;
 
-    .nav-link { color: $bg-clean; }
+    // .nav-link { color: $bg-clean; }
   }
 }
 
@@ -172,11 +172,11 @@ body {
   line-height: 60px;
   margin: 0 20px;
   font-family: $ff-primary;
-  color: $link-secondary;
+  // color: $link-secondary;
   font-size: ($fs-extra-small)-.2;
   @include transition(color, .2s, 0s, linear);
 
-  &:hover { color: $link-primary; }
+  // &:hover { color: $link-primary; }
 }
 // ===
 
@@ -204,14 +204,18 @@ body {
 .section-title {
   font-family: $ff-title;
   font-size: $fs-small;
-  color: $title-primary;
-  text-transform: none;
+  // color: $title-primary;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  // border-bottom: 1px solid $border-primary;
+  display: inline-block;
 }
 
 .section-description {
   line-height: $fs-small;
   font-size: ($fs-extra-small)-.2;
-  color: $text-primary;
+  // color: $text-primary;
   font-family: $ff-general;
   width: 50%;
   margin: 20px auto;
@@ -221,21 +225,21 @@ body {
 .link {
   text-decoration: none;
   font-size: ($fs-extra-small)-.2;
-  color: $link-primary;
+  // color: $link-primary;
   font-family: $ff-general;
 }
 
 // post
 .post {
-  background-color: $border-primary;
+  // background-color: $border-primary;
   margin-top: 30px;
   padding: 20px 0;
 
   &.new {
-    background-color: $link-primary;
+    // background-color: $link-primary;
 
-    h3 { color: $bg-clean; }
-    p { color: $bg-clean; }
+    // h3 { color: $bg-clean; }
+    // p { color: $bg-clean; }
   }
 }
 
@@ -250,7 +254,7 @@ body {
     font-family: $ff-general;
     text-transform: uppercase;
     font-size: $fs-extra-small;
-    color: $text-primary;
+    // color: $text-primary;
   }
 
   p {
@@ -276,8 +280,8 @@ body {
     position: absolute;
     bottom: -60px;
     text-transform: uppercase;
-    color: $bg-primary;
-    background-color: $bg-featured;
+    // color: $bg-primary;
+    // background-color: $bg-featured;
     text-align: center;
     font-family: $ff-primary;
     font-size: ($fs-extra-small)-.2;
@@ -312,26 +316,15 @@ body {
 // Social
 //
 
-.social {
-  text-align: center;
-
-  h2 {
-    text-transform: uppercase;
-    padding-bottom: 6px;
-    border-bottom: 1px solid $border-primary;
-    display: inline-block;
-  }
-}
-
 .feeds {
   width: 100%;
   display: block;
   margin: 30px auto;
 
   &.instagram {
-    border-top: 1px solid $border-primary;
-    border-bottom: 1px solid $border-primary;
-    background-color: $bg-featured;
+    // border-top: 1px solid $border-primary;
+    // border-bottom: 1px solid $border-primary;
+    // background-color: $bg-featured;
     padding: 30px 0;
   }
 
@@ -344,7 +337,7 @@ body {
 // instagram
 .feeds-instagram-item {
   margin: 2px;
-  border: 1px solid $bg-primary;
+  // border: 1px solid $bg-primary;
 }
 
 .feeds-instagram-link {
@@ -370,7 +363,7 @@ body {
   width: 100%;
   height: 0%;
   line-height: 40px;
-  color: $bg-primary;
+  // color: $bg-primary;
   font-family: $ff-general;
   font-size: $fs-small;
   background-color: rgba(255, 255, 255, .7);
@@ -397,7 +390,7 @@ body {
   height: auto;
   position: relative;
   min-height: 130px;
-  background-color: $border-primary;
+  // background-color: $border-primary;
   margin: 0 30px 100px 0;
   @include transition(background, .2s, 0s, ease-out);
 
@@ -409,19 +402,19 @@ body {
     width: 0;
     height: 0;
     border-top: 14px solid transparent;
-    border-right: 26px solid $border-primary;
+    // border-right: 26px solid $border-primary;
     border-bottom: 13px solid transparent;
     @include rotate(10deg);
   }
 
   &:hover {
-    background-color: $text-primary;
+    // background-color: $text-primary;
 
-    &::before { border-right: 26px solid $text-primary; }
+    // &::before { border-right: 26px solid $text-primary; }
 
-    .tweet a { color: $bg-featured; }
+    // .tweet a { color: $bg-featured; }
 
-    p { color: $bg-featured; }
+    // p { color: $bg-featured; }
   }
 
   .user {
@@ -438,7 +431,7 @@ body {
 
     a {
       text-decoration: none;
-      color: $link-primary;
+      // color: $link-primary;
     }
 
     span {
@@ -459,13 +452,13 @@ body {
     font-size: ($fs-extra-small)-.4;
     line-height: $fs-small;
     font-family: $ff-general;
-    color: $bg-primary;
+    // color: $bg-primary;
     @include truncate();
 
     &.tweet {
       padding: 20px;
 
-      a { color: $link-primary; }
+      // a { color: $link-primary; }
     }
   }
 }
@@ -478,9 +471,9 @@ body {
 
 .contact {
   padding: 70px 0;
-  border-top: 1px solid $border-primary;
-  border-bottom: 1px solid $border-primary;
-  background-color: $bg-featured;
+  // border-top: 1px solid $border-primary;
+  // border-bottom: 1px solid $border-primary;
+  // background-color: $bg-featured;
 
   .content {
     @extend %width-fixed;

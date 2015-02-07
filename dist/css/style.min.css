@@ -90,32 +90,11 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* line 5, ../../src/sass/_form.scss */
-::-webkit-input-placeholder {
-  color: #5f6a7d;
-}
-
-/* line 7, ../../src/sass/_form.scss */
-:-moz-placeholder {
-  color: #5f6a7d;
-}
-
-/* line 9, ../../src/sass/_form.scss */
-::-moz-placeholder {
-  color: #5f6a7d;
-}
-
-/* line 11, ../../src/sass/_form.scss */
-:-ms-input-placeholder {
-  color: #5f6a7d;
-}
-
 /* line 13, ../../src/sass/_form.scss */
 input:active,
 textarea:active, input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #2586b7;
 }
 
 /* line 18, ../../src/sass/_form.scss */
@@ -127,7 +106,6 @@ textarea {
 /* line 23, ../../src/sass/_form.scss */
 input,
 textarea {
-  font-family: "OpenSansLight";
   -webkit-transition: border 0.2s 0s linear;
   -moz-transition: border 0.2s 0s linear;
   -ms-transition: border 0.2s 0s linear;
@@ -142,8 +120,6 @@ textarea {
   text-align: center;
   border: none;
   margin: 0 auto;
-  color: #FFFFFF;
-  background-color: #2586b7;
   font-size: 1rem;
   font-family: "OpenSansLight";
   display: block;
@@ -159,10 +135,6 @@ textarea {
   -o-transition: background 0.2s 0s ease;
   transition: background 0.2s 0s ease;
 }
-/* line 47, ../../src/sass/_form.scss */
-.btn-primary:hover {
-  background-color: #2E3B4E;
-}
 
 /* line 50, ../../src/sass/_form.scss */
 .input-primary {
@@ -170,7 +142,6 @@ textarea {
   padding: 5px 10px;
   margin-bottom: 10px;
   outline: none;
-  border: 1px solid #E0E0E0;
   font-size: 1rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -205,7 +176,6 @@ body.js-offline::after {
   top: 0;
   left: 0;
   text-align: center;
-  color: #FAFAFA;
   font-size: 1.4rem;
   line-height: 1.4rem;
   font-family: "OpenSansLight";
@@ -217,25 +187,20 @@ body.js-offline::after {
 
 /* line 31, ../../src/sass/_general.scss */
 ::-moz-selection {
-  background: #FAFAFA;
-  color: #2586b7;
   text-shadow: none;
 }
 
 /* line 37, ../../src/sass/_general.scss */
 ::selection {
-  background: #FAFAFA;
-  color: #2586b7;
   text-shadow: none;
 }
 
 /* line 48, ../../src/sass/_general.scss */
 .header-primary {
   width: 100%;
-  height: 385px;
+  height: 165px;
   position: relative;
   padding-top: 20px;
-  background-color: #1B2126;
 }
 
 /* line 56, ../../src/sass/_general.scss */
@@ -243,14 +208,12 @@ body.js-offline::after {
   width: 100%;
   min-height: 800px;
   display: block;
-  background-color: #FFFFFF;
 }
 
 /* line 63, ../../src/sass/_general.scss */
 .logo {
   font-family: "sverige_script_decorated_deRg";
   font-size: 7rem;
-  color: #FAFAFA;
   text-align: center;
   height: 250px;
   line-height: 320px;
@@ -260,13 +223,11 @@ body.js-offline::after {
 .footer-primary {
   position: relative;
   width: 100%;
-  min-height: 245px;
+  min-height: 450px;
   text-align: center;
-  background-color: #1B2126;
 }
 /* line 80, ../../src/sass/_general.scss */
 .footer-primary p {
-  color: #FAFAFA;
   font-size: 1rem;
   font-family: "OpenSansLight";
   display: inline-block;
@@ -277,7 +238,6 @@ body.js-offline::after {
 /* line 90, ../../src/sass/_general.scss */
 .social-item {
   width: 280px;
-  border: 1px solid #FAFAFA;
   height: 45px;
   display: inline-block;
   margin: 70px 10px 0 0;
@@ -289,7 +249,6 @@ body.js-offline::after {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #E0E0E0;
   font-family: "OpenSansRegular";
   font-size: 1rem;
   -webkit-transition: all 0.2s 0s ease-out;
@@ -297,11 +256,6 @@ body.js-offline::after {
   -ms-transition: all 0.2s 0s ease-out;
   -o-transition: all 0.2s 0s ease-out;
   transition: all 0.2s 0s ease-out;
-}
-/* line 108, ../../src/sass/_general.scss */
-.social-link:hover {
-  background-color: #E0E0E0;
-  color: #1B2126;
 }
 
 /* line 114, ../../src/sass/_general.scss */
@@ -326,7 +280,6 @@ body.js-offline::after {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  background-color: #E0E0E0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px 40px;
@@ -352,8 +305,6 @@ body.js-offline::after {
   width: 100%;
   margin-top: 75px;
   text-align: center;
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #FAFAFA;
 }
 /* line 151, ../../src/sass/_general.scss */
 .nav-primary.js-nav-active {
@@ -366,14 +317,6 @@ body.js-offline::after {
 .nav-item {
   display: inline-block;
 }
-/* line 161, ../../src/sass/_general.scss */
-.nav-item.js-nav-active {
-  background-color: #2586b7;
-}
-/* line 164, ../../src/sass/_general.scss */
-.nav-item.js-nav-active .nav-link {
-  color: #FFFFFF;
-}
 
 /* line 168, ../../src/sass/_general.scss */
 .nav-link {
@@ -383,17 +326,12 @@ body.js-offline::after {
   line-height: 60px;
   margin: 0 20px;
   font-family: "OpenSansLight";
-  color: #6C7980;
   font-size: 1rem;
   -webkit-transition: color 0.2s 0s linear;
   -moz-transition: color 0.2s 0s linear;
   -ms-transition: color 0.2s 0s linear;
   -o-transition: color 0.2s 0s linear;
   transition: color 0.2s 0s linear;
-}
-/* line 179, ../../src/sass/_general.scss */
-.nav-link:hover {
-  color: #2586b7;
 }
 
 /* line 184, ../../src/sass/_general.scss */
@@ -421,48 +359,35 @@ body.js-offline::after {
 .section-title {
   font-family: "OpenSansBold";
   font-size: 1.4rem;
-  color: #2E3B4E;
-  text-transform: none;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  display: inline-block;
 }
 
-/* line 211, ../../src/sass/_general.scss */
+/* line 215, ../../src/sass/_general.scss */
 .section-description {
   line-height: 1.4rem;
   font-size: 1rem;
-  color: #5f6a7d;
   font-family: "OpenSansRegular";
   width: 50%;
   margin: 20px auto;
 }
 
-/* line 221, ../../src/sass/_general.scss */
+/* line 225, ../../src/sass/_general.scss */
 .link {
   text-decoration: none;
   font-size: 1rem;
-  color: #2586b7;
   font-family: "OpenSansRegular";
 }
 
-/* line 229, ../../src/sass/_general.scss */
+/* line 233, ../../src/sass/_general.scss */
 .post {
-  background-color: #E0E0E0;
   margin-top: 30px;
   padding: 20px 0;
 }
-/* line 234, ../../src/sass/_general.scss */
-.post.new {
-  background-color: #2586b7;
-}
-/* line 237, ../../src/sass/_general.scss */
-.post.new h3 {
-  color: #FFFFFF;
-}
-/* line 238, ../../src/sass/_general.scss */
-.post.new p {
-  color: #FFFFFF;
-}
 
-/* line 242, ../../src/sass/_general.scss */
+/* line 246, ../../src/sass/_general.scss */
 .post-content {
   display: inline-block;
   vertical-align: middle;
@@ -470,14 +395,13 @@ body.js-offline::after {
   margin: 10px;
   text-align: left;
 }
-/* line 249, ../../src/sass/_general.scss */
+/* line 253, ../../src/sass/_general.scss */
 .post-content h3 {
   font-family: "OpenSansRegular";
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: #5f6a7d;
 }
-/* line 256, ../../src/sass/_general.scss */
+/* line 260, ../../src/sass/_general.scss */
 .post-content p {
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -485,7 +409,7 @@ body.js-offline::after {
   line-height: 1.4rem;
 }
 
-/* line 264, ../../src/sass/_general.scss */
+/* line 268, ../../src/sass/_general.scss */
 .post-image {
   display: inline-block;
   vertical-align: middle;
@@ -493,7 +417,7 @@ body.js-offline::after {
   overflow: hidden;
   height: 202px;
 }
-/* line 271, ../../src/sass/_general.scss */
+/* line 275, ../../src/sass/_general.scss */
 .post-image img {
   -webkit-transition: transform 0.2s 0s ease-out;
   -moz-transition: transform 0.2s 0s ease-out;
@@ -501,15 +425,13 @@ body.js-offline::after {
   -o-transition: transform 0.2s 0s ease-out;
   transition: transform 0.2s 0s ease-out;
 }
-/* line 273, ../../src/sass/_general.scss */
+/* line 277, ../../src/sass/_general.scss */
 .post-image figcaption {
   width: 100%;
   padding: 20px 0;
   position: absolute;
   bottom: -60px;
   text-transform: uppercase;
-  color: #1B2126;
-  background-color: #FAFAFA;
   text-align: center;
   font-family: "OpenSansLight";
   font-size: 1rem;
@@ -519,11 +441,11 @@ body.js-offline::after {
   -o-transition: bottom 0.2s 0s ease-out;
   transition: bottom 0.2s 0s ease-out;
 }
-/* line 288, ../../src/sass/_general.scss */
+/* line 292, ../../src/sass/_general.scss */
 .post-image:hover figcaption {
   bottom: 0;
 }
-/* line 290, ../../src/sass/_general.scss */
+/* line 294, ../../src/sass/_general.scss */
 .post-image:hover img {
   -webkit-transform: translate3d(0, -40px, 0);
   -moz-transform: translate3d(0, -40px, 0);
@@ -535,67 +457,51 @@ body.js-offline::after {
   filter: url(#svg-blur);
 }
 
-/* line 299, ../../src/sass/_general.scss */
+/* line 303, ../../src/sass/_general.scss */
 #svg-filter {
   display: none;
 }
 
-/* line 303, ../../src/sass/_general.scss */
+/* line 307, ../../src/sass/_general.scss */
 .content-modal {
   display: none;
 }
-/* line 306, ../../src/sass/_general.scss */
+/* line 310, ../../src/sass/_general.scss */
 .content-modal p {
   width: 100%;
 }
 
-/* line 315, ../../src/sass/_general.scss */
-.social {
-  text-align: center;
-}
-/* line 318, ../../src/sass/_general.scss */
-.social h2 {
-  text-transform: uppercase;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #E0E0E0;
-  display: inline-block;
-}
-
-/* line 326, ../../src/sass/_general.scss */
+/* line 319, ../../src/sass/_general.scss */
 .feeds {
   width: 100%;
   display: block;
   margin: 30px auto;
 }
-/* line 331, ../../src/sass/_general.scss */
+/* line 324, ../../src/sass/_general.scss */
 .feeds.instagram {
-  border-top: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #FAFAFA;
   padding: 30px 0;
 }
-/* line 338, ../../src/sass/_general.scss */
+/* line 331, ../../src/sass/_general.scss */
 .feeds li {
   display: inline-block;
   position: relative;
 }
 
-/* line 345, ../../src/sass/_general.scss */
+/* line 338, ../../src/sass/_general.scss */
 .feeds-instagram-item {
   margin: 2px;
-  border: 1px solid #1B2126;
 }
 
-/* line 350, ../../src/sass/_general.scss */
+/* line 343, ../../src/sass/_general.scss */
 .feeds-instagram-link {
   text-decoration: none;
 }
-/* line 354, ../../src/sass/_general.scss */
+/* line 347, ../../src/sass/_general.scss */
 .feeds-instagram-link:hover .feeds-instagram-like {
   height: 25%;
 }
 
-/* line 358, ../../src/sass/_general.scss */
+/* line 351, ../../src/sass/_general.scss */
 .feeds-instagram-image {
   overflow: hidden;
   width: 150px;
@@ -603,7 +509,7 @@ body.js-offline::after {
   position: relative;
 }
 
-/* line 365, ../../src/sass/_general.scss */
+/* line 358, ../../src/sass/_general.scss */
 .feeds-instagram-like {
   position: absolute;
   text-align: center;
@@ -612,7 +518,6 @@ body.js-offline::after {
   width: 100%;
   height: 0%;
   line-height: 40px;
-  color: #1B2126;
   font-family: "OpenSansRegular";
   font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.7);
@@ -622,7 +527,7 @@ body.js-offline::after {
   -o-transition: height 0.2s 0s linear;
   transition: height 0.2s 0s linear;
 }
-/* line 379, ../../src/sass/_general.scss */
+/* line 372, ../../src/sass/_general.scss */
 .feeds-instagram-like::before {
   content: '';
   width: 30px;
@@ -640,13 +545,12 @@ body.js-offline::after {
   border-radius: 100%;
 }
 
-/* line 395, ../../src/sass/_general.scss */
+/* line 388, ../../src/sass/_general.scss */
 .feeds-twitter-item {
   width: 240px;
   height: auto;
   position: relative;
   min-height: 130px;
-  background-color: #E0E0E0;
   margin: 0 30px 100px 0;
   -webkit-transition: background 0.2s 0s ease-out;
   -moz-transition: background 0.2s 0s ease-out;
@@ -654,7 +558,7 @@ body.js-offline::after {
   -o-transition: background 0.2s 0s ease-out;
   transition: background 0.2s 0s ease-out;
 }
-/* line 404, ../../src/sass/_general.scss */
+/* line 397, ../../src/sass/_general.scss */
 .feeds-twitter-item::before {
   content: '';
   position: absolute;
@@ -663,7 +567,6 @@ body.js-offline::after {
   width: 0;
   height: 0;
   border-top: 14px solid transparent;
-  border-right: 26px solid #E0E0E0;
   border-bottom: 13px solid transparent;
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -671,29 +574,13 @@ body.js-offline::after {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 417, ../../src/sass/_general.scss */
-.feeds-twitter-item:hover {
-  background-color: #5f6a7d;
-}
 /* line 420, ../../src/sass/_general.scss */
-.feeds-twitter-item:hover::before {
-  border-right: 26px solid #5f6a7d;
-}
-/* line 422, ../../src/sass/_general.scss */
-.feeds-twitter-item:hover .tweet a {
-  color: #FAFAFA;
-}
-/* line 424, ../../src/sass/_general.scss */
-.feeds-twitter-item:hover p {
-  color: #FAFAFA;
-}
-/* line 427, ../../src/sass/_general.scss */
 .feeds-twitter-item .user {
   position: absolute;
   bottom: -70px;
   left: 53px;
 }
-/* line 432, ../../src/sass/_general.scss */
+/* line 425, ../../src/sass/_general.scss */
 .feeds-twitter-item .user img {
   width: 48px;
   height: 48px;
@@ -704,16 +591,15 @@ body.js-offline::after {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 439, ../../src/sass/_general.scss */
+/* line 432, ../../src/sass/_general.scss */
 .feeds-twitter-item .user a {
   text-decoration: none;
-  color: #2586b7;
 }
-/* line 444, ../../src/sass/_general.scss */
+/* line 437, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span {
   display: none;
 }
-/* line 447, ../../src/sass/_general.scss */
+/* line 440, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span[data-scribe="element:screen_name"] {
   font-size: 0.8rem;
   font-family: "OpenSansRegular";
@@ -722,38 +608,30 @@ body.js-offline::after {
   margin-left: 10px;
   display: inline-block;
 }
-/* line 458, ../../src/sass/_general.scss */
+/* line 451, ../../src/sass/_general.scss */
 .feeds-twitter-item p {
   font-size: 0.8rem;
   line-height: 1.4rem;
   font-family: "OpenSansRegular";
-  color: #1B2126;
   white-space: pre-line;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 465, ../../src/sass/_general.scss */
+/* line 458, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet {
   padding: 20px;
 }
-/* line 468, ../../src/sass/_general.scss */
-.feeds-twitter-item p.tweet a {
-  color: #2586b7;
-}
 
-/* line 479, ../../src/sass/_general.scss */
+/* line 472, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
-  border-top: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
-  background-color: #FAFAFA;
 }
-/* line 485, ../../src/sass/_general.scss */
+/* line 478, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 491, ../../src/sass/_general.scss */
+/* line 484, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }
