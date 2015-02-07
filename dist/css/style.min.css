@@ -102,9 +102,14 @@ table {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
-/* line 60, ../../src/sass/_base.scss */
+/* line 66, ../../src/sass/_base.scss */
 .logo-primary a:hover {
   -webkit-animation-name: hvr-wobble-horizontal;
   -moz-animation-name: hvr-wobble-horizontal;
@@ -121,11 +126,16 @@ table {
   -ms-animation-timing-function: ease-in-out;
   -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
 }
 
 /* Wobble Horizontal */
@@ -259,7 +269,7 @@ table {
     transform: translateX(0);
   }
 }
-/* line 247, ../../src/sass/_base.scss */
+/* line 259, ../../src/sass/_base.scss */
 .feeds-instagram-item {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -284,7 +294,7 @@ table {
   transition-property: transform;
 }
 
-/* line 275, ../../src/sass/_base.scss */
+/* line 287, ../../src/sass/_base.scss */
 .feeds-instagram-item:hover {
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
@@ -465,7 +475,7 @@ body.js-offline::after {
 .nav-primary.js-nav-active {
   position: fixed;
   top: -15px;
-  z-index: 901;
+  z-index: 99999999;
 }
 /* line 113, ../../src/sass/_general.scss */
 .nav-primary.js-nav-active .nav-image {
@@ -519,17 +529,16 @@ body.js-offline::after {
 
 /* line 154, ../../src/sass/_general.scss */
 .section.home, .section.about, .contact .content {
-  width: 80%;
+  width: 90%;
 }
 
 /* line 156, ../../src/sass/_general.scss */
 .section {
-  margin: 70px auto 0 auto;
+  margin: 40px auto 0 auto;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-/* line 165, ../../src/sass/_general.scss */
+/* line 164, ../../src/sass/_general.scss */
 .section-title {
   font-family: "OpenSansBold";
   font-size: 1.4rem;
@@ -541,56 +550,201 @@ body.js-offline::after {
   display: inline-block;
 }
 
-/* line 176, ../../src/sass/_general.scss */
+/* line 175, ../../src/sass/_general.scss */
 .section-description {
   line-height: 1.4rem;
   font-size: 1rem;
+  color: #000000;
   font-family: "OpenSansRegular";
   width: 50%;
   margin: 20px auto;
 }
 
-/* line 187, ../../src/sass/_general.scss */
-.content-modal {
-  display: none;
+/* line 184, ../../src/sass/_general.scss */
+.produts-content {
+  border-top: 1px solid #dddbdb;
+  border-bottom: 1px solid #dddbdb;
+  background-color: #eaeaea;
 }
-/* line 190, ../../src/sass/_general.scss */
-.content-modal p {
+
+/* line 192, ../../src/sass/_general.scss */
+.pontos-venda .content {
+  padding: 20px 0;
   width: 100%;
 }
 
-/* line 199, ../../src/sass/_general.scss */
+/* line 198, ../../src/sass/_general.scss */
+.grid {
+  display: inline-block;
+}
+/* line 201, ../../src/sass/_general.scss */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+/* line 215, ../../src/sass/_general.scss */
+.grid figure:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 218, ../../src/sass/_general.scss */
+.grid figure:hover h2::after {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 224, ../../src/sass/_general.scss */
+.grid figure:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 231, ../../src/sass/_general.scss */
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 251, ../../src/sass/_general.scss */
+.grid h2 {
+  font-family: "OpenSansBold";
+  font-size: 1.8rem;
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
+  top: 30px;
+  -webkit-transition: transform 0.35s 0s linear;
+  -moz-transition: transform 0.35s 0s linear;
+  -ms-transition: transform 0.35s 0s linear;
+  -o-transition: transform 0.35s 0s linear;
+  transition: transform 0.35s 0s linear;
+  -webkit-transform: translate3d(0, 20px, 0);
+  -moz-transform: translate3d(0, 20px, 0);
+  -ms-transform: translate3d(0, 20px, 0);
+  -o-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+/* line 265, ../../src/sass/_general.scss */
+.grid h2::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0, 40px, 0);
+  -moz-transform: translate3d(0, 40px, 0);
+  -ms-transform: translate3d(0, 40px, 0);
+  -o-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -ms-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+/* line 284, ../../src/sass/_general.scss */
+.grid p {
+  letter-spacing: 1px;
+  font-family: "OpenSansLight";
+  font-size: 1rem;
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
+  bottom: 30px;
+  line-height: 1.5;
+  -webkit-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -ms-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+/* line 306, ../../src/sass/_general.scss */
+.grid .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-indent: -9999px;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 327, ../../src/sass/_general.scss */
 .feeds {
   width: 100%;
   display: block;
   margin: 30px auto;
 }
-/* line 204, ../../src/sass/_general.scss */
+/* line 332, ../../src/sass/_general.scss */
 .feeds.instagram {
   border-top: 1px solid #dddbdb;
   border-bottom: 1px solid #dddbdb;
   background-color: #eaeaea;
   padding: 20px 0;
 }
-/* line 211, ../../src/sass/_general.scss */
+/* line 339, ../../src/sass/_general.scss */
 .feeds li {
   display: inline-block;
   position: relative;
 }
 
-/* line 218, ../../src/sass/_general.scss */
+/* line 345, ../../src/sass/_general.scss */
 .feeds-instagram-link {
   text-decoration: none;
 }
 
-/* line 220, ../../src/sass/_general.scss */
+/* line 347, ../../src/sass/_general.scss */
 .feeds-instagram-image {
   width: 150px;
   height: 150px;
   position: relative;
 }
 
-/* line 226, ../../src/sass/_general.scss */
+/* line 353, ../../src/sass/_general.scss */
 .feeds-instagram-like {
   position: absolute;
   text-align: right;
@@ -608,7 +762,7 @@ body.js-offline::after {
   -o-transition: height 0.2s 0s linear;
   transition: height 0.2s 0s linear;
 }
-/* line 239, ../../src/sass/_general.scss */
+/* line 366, ../../src/sass/_general.scss */
 .feeds-instagram-like::before {
   content: '';
   width: 20px;
@@ -621,7 +775,7 @@ body.js-offline::after {
   background-repeat: no-repeat;
 }
 
-/* line 251, ../../src/sass/_general.scss */
+/* line 378, ../../src/sass/_general.scss */
 .feeds-instagram-item {
   height: auto;
   padding: 6px 6px 26px 6px;
@@ -629,17 +783,17 @@ body.js-offline::after {
   background-color: #ffffff;
 }
 
-/* line 268, ../../src/sass/_general.scss */
+/* line 395, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 274, ../../src/sass/_general.scss */
+/* line 401, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }
 
-/* line 279, ../../src/sass/_general.scss */
+/* line 406, ../../src/sass/_general.scss */
 .social-item {
   width: 280px;
   border: 1px solid #eaeaea;
@@ -648,7 +802,7 @@ body.js-offline::after {
   margin: 70px 10px 0 0;
 }
 
-/* line 287, ../../src/sass/_general.scss */
+/* line 414, ../../src/sass/_general.scss */
 .social-link {
   line-height: 45px;
   display: block;
@@ -663,12 +817,12 @@ body.js-offline::after {
   -o-transition: all 0.2s 0s ease-out;
   transition: all 0.2s 0s ease-out;
 }
-/* line 297, ../../src/sass/_general.scss */
+/* line 424, ../../src/sass/_general.scss */
 .social-link:hover {
   background-color: #dddbdb;
 }
 
-/* line 303, ../../src/sass/_general.scss */
+/* line 430, ../../src/sass/_general.scss */
 .back-top {
   width: 50px;
   height: 50px;
@@ -702,11 +856,11 @@ body.js-offline::after {
   -o-transition: opacity 0.2s 0s linear;
   transition: opacity 0.2s 0s linear;
 }
-/* line 325, ../../src/sass/_general.scss */
+/* line 452, ../../src/sass/_general.scss */
 .back-top.js-show {
   opacity: 1;
 }
-/* line 327, ../../src/sass/_general.scss */
+/* line 454, ../../src/sass/_general.scss */
 .back-top:hover {
   opacity: .5;
 }
@@ -731,17 +885,43 @@ body.js-offline::after {
   max-width: 100%;
 }
 
-/* line 22, ../../src/sass/libs/_slick.scss */
+/* line 21, ../../src/sass/libs/_slick.scss */
+.slick-dots {
+  position: relative;
+  bottom: 50px;
+  z-index: 99999;
+}
+/* line 26, ../../src/sass/libs/_slick.scss */
 .slick-dots li {
   display: inline-block;
   margin: 5px;
 }
-/* line 26, ../../src/sass/libs/_slick.scss */
-.slick-dots li.slick-active {
-  background-color: black;
+/* line 30, ../../src/sass/libs/_slick.scss */
+.slick-dots li button {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  background-color: #000000;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+/* line 43, ../../src/sass/libs/_slick.scss */
+.slick-dots li.slick-active button {
+  background-color: #ef3338;
 }
 
-/* line 30, ../../src/sass/libs/_slick.scss */
+/* line 48, ../../src/sass/libs/_slick.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -749,12 +929,12 @@ body.js-offline::after {
   z-index: 910;
 }
 
-/* line 37, ../../src/sass/libs/_slick.scss */
+/* line 55, ../../src/sass/libs/_slick.scss */
 .slick-prev {
   left: 0;
 }
 
-/* line 39, ../../src/sass/libs/_slick.scss */
+/* line 57, ../../src/sass/libs/_slick.scss */
 .slick-next {
   right: 0;
 }
