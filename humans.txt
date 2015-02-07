@@ -1,0 +1,32 @@
+###########################################################
+#                    Awesome Team
+############################################################
+
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Designer: First and Last name
+  Contact: http://fb.com/myurl
+  Twitter: @twitter
+  From: Brazil, Pernambuco, Paulista
+
+  Front-End Engineer: First and Last name
+  Contact: http://myurl.com
+  Twitter: @twitter
+  From: Brazil, Pernambuco, Recife
+
+  Back-End Engineer: First and Last name
+  Contact: http://myurl.com
+  Twitter: @twitter
+  From: Brazil, Pernambuco, Recife
+
+
+# PROJECT
+
+  Last update: 2015/01/03
+  Doctype: HTML5
+  IDE: Sublime Text, Chrome Developer Tools
+  Standards: HTML5, CSS3, APP.js
+  Components: jQuery, Bootstrap
