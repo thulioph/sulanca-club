@@ -108,7 +108,7 @@ body {
   &.js-nav-active {
     position: fixed;
     top: -15px;
-    z-index: 901;
+    z-index: 99999999;
 
     .nav-image {
       display: inline-block;
@@ -151,12 +151,11 @@ body {
 // ===
 
 
-%width-fixed { width: 80%; }
+%width-fixed { width: 90%; }
 
 .section {
-  margin: 70px auto 0 auto;
+  margin: 40px auto 0 auto;
   text-align: center;
-  padding-bottom: 20px;
 
   &.home { @extend %width-fixed; }
   &.about {@extend %width-fixed; }
@@ -176,20 +175,149 @@ body {
 .section-description {
   line-height: $fs-small;
   font-size: ($fs-extra-small)-.2;
-  // color: $text-primary;
+  color: $color-secondary;
   font-family: $ff-general;
   width: 50%;
   margin: 20px auto;
 }
 
-
-// Modal
-.content-modal {
-  display: none;
-
-  p { width: 100%; }
+.produts-content {
+  border-top: 1px solid $color-other-dark;
+  border-bottom: 1px solid $color-other-dark;
+  background-color: $color-other;
 }
-// ===
+
+// Pontos de venda
+.pontos-venda {
+  .content {
+    padding: 20px 0;
+    width: 100%;
+  }
+}
+
+.grid {
+  display: inline-block;
+
+  figure {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      h2 {
+        @include translate3d(0, 0, 0);
+
+        &::after {
+          opacity: 1;
+          @include translate3d(0, 0, 0);
+        }
+      }
+
+      p {
+        opacity: 1;
+        @include translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: right;
+
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  h2 {
+    font-family: $ff-title;
+    font-size: $fs-medium;
+
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+
+    top: 30px;
+    @include transition(transform, .35s, 0s, linear);
+
+    @include translate3d(0, 20px, 0);
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      content: '';
+      @include translate3d(0, 40px, 0);
+
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
+      -ms-transition: opacity 0.35s, -webkit-transform 0.35s;
+      -o-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+    }
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-family: $ff-primary;
+    font-size: ($fs-extra-small)-.2;
+
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+
+    bottom: 30px;
+    line-height: 1.5;
+    @include translate3d(0, 100%, 0);
+
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -ms-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -o-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+  }
+
+  .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1000;
+    text-indent: -9999px;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+}
+// ====
 
 
 //
@@ -214,7 +342,6 @@ body {
   }
 }
 
-// instagram
 .feeds-instagram-link { text-decoration: none; }
 
 .feeds-instagram-image {
