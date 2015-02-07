@@ -11,6 +11,7 @@ APP.Slide = {
   initSlide: function() {
     $('#slide').slick({
       dots: true,
+      arrows: false,
       infinite: true,
       speed: 500,
       fade: true,
