@@ -5,8 +5,8 @@
 var APP = APP || {};
 APP.Scroll = {
   setUp: function(){
-    // this.getClick();
-    // this.getPosition();
+    this.getClick();
+    this.getPosition();
     this.showBackTop();
     this.backTop();
   },
@@ -17,7 +17,7 @@ APP.Scroll = {
     that = this;
 
     // nav links
-    $('.nav-list').on('click', 'a', function(event) {
+    $('.anchor').on('click', function(event) {
       event.preventDefault();
       target = $( $(this).attr('href') );
 
@@ -37,10 +37,11 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 345) {
+      if ($(document).scrollTop() >= 187) {
         $('#nav-primary').addClass('js-nav-active');
-      } else if ($(document).scrollTop() <= 405) {
+      } else if ($(document).scrollTop() <= 247) {
         $('#nav-primary').removeClass('js-nav-active');
+        $('.nav-item').removeClass('js-nav-active');
       }
     });
   },
