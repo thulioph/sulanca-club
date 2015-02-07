@@ -19,11 +19,29 @@
 }
 
 .slick-dots {
+  position: relative;
+  bottom: 50px;
+  z-index: 99999;
+
   li {
     display: inline-block;
     margin: 5px;
 
-    &.slick-active { background-color: black; }
+    button {
+      width: 30px;
+      cursor: pointer;
+      height: 30px;
+      border: none;
+      outline: none;
+      text-indent: -9999px;
+      background-color: $color-secondary;
+      @include bdr(100%);
+      @include apr(none);
+    }
+
+    &.slick-active {
+      button { background-color: $color-primary; }
+    }
   }
 }
 
