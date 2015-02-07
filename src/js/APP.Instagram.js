@@ -9,15 +9,14 @@ APP.Instagram = {
 
     that        = this;
     limit       = 8;
-    size        = 'medium';
     user        = '1343762866';
     clientId    = 'd8620946db974380820e9264a4a4482d';
     url         = 'https://api.instagram.com/v1/users/'+ user +'/media/recent?client_id=' + clientId + '&access_token='+ '';
 
-    that.getData(limit, size, url);
+    that.getData(limit, url);
   },
 
-  getData: function(limit, size, url) {
+  getData: function(limit, url) {
     var that = this;
 
     $.ajax({
@@ -33,7 +32,7 @@ APP.Instagram = {
         if (data.data.length === 0) {
           alert('Não existem imagens!');
         } else {
-          that.template(data, limit, size);
+          that.template(data, limit);
         }
       },
 
@@ -43,7 +42,7 @@ APP.Instagram = {
     });
   },
 
-  template: function(data, limit, size) {
+  template: function(data, limit) {
     var source, template, output, dados, photos;
 
     source = document.getElementById('instagram-template').innerHTML;
