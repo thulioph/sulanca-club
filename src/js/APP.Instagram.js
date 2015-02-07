@@ -2,18 +2,17 @@ var APP = APP || {};
 APP.Instagram = {
   setUp: function() {
     this.setConfig();
-    this.handlebarsModal();
   },
 
   setConfig: function() {
-    var that, limit, size, tag, url, accessToken;
+    var that, limit, size, user, url, clientId;
 
     that        = this;
-    limit       = 16;
+    limit       = 8;
     size        = 'medium';
-    tag         = 'catrina';
-    accessToken = '181941196.5b9e1e6.c4df4ed6d9494b9a817be3ee7d046127';
-    url         = 'https://api.instagram.com/v1/tags/' + tag + '/media/recent?access_token=' + accessToken + '';
+    user        = '1343762866';
+    clientId    = 'd8620946db974380820e9264a4a4482d';
+    url         = 'https://api.instagram.com/v1/users/'+ user +'/media/recent?client_id=' + clientId + '&access_token='+ '';
 
     that.getData(limit, size, url);
   },

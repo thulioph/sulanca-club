@@ -564,39 +564,38 @@ body.js-offline::after {
 /* line 326, ../../src/sass/_general.scss */
 .feeds {
   width: 100%;
-  min-height: 280px;
   display: block;
   margin: 30px auto;
 }
-/* line 332, ../../src/sass/_general.scss */
+/* line 331, ../../src/sass/_general.scss */
 .feeds.instagram {
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
   padding: 30px 0;
 }
-/* line 339, ../../src/sass/_general.scss */
+/* line 338, ../../src/sass/_general.scss */
 .feeds li {
   display: inline-block;
   position: relative;
 }
 
-/* line 346, ../../src/sass/_general.scss */
+/* line 345, ../../src/sass/_general.scss */
 .feeds-instagram-item {
   margin: 2px;
   border: 1px solid #1B2126;
 }
 
-/* line 351, ../../src/sass/_general.scss */
+/* line 350, ../../src/sass/_general.scss */
 .feeds-instagram-link {
   text-decoration: none;
 }
-/* line 355, ../../src/sass/_general.scss */
+/* line 354, ../../src/sass/_general.scss */
 .feeds-instagram-link:hover .feeds-instagram-like {
   height: 25%;
 }
 
-/* line 359, ../../src/sass/_general.scss */
+/* line 358, ../../src/sass/_general.scss */
 .feeds-instagram-image {
   overflow: hidden;
   width: 150px;
@@ -604,7 +603,7 @@ body.js-offline::after {
   position: relative;
 }
 
-/* line 366, ../../src/sass/_general.scss */
+/* line 365, ../../src/sass/_general.scss */
 .feeds-instagram-like {
   position: absolute;
   text-align: center;
@@ -623,7 +622,7 @@ body.js-offline::after {
   -o-transition: height 0.2s 0s linear;
   transition: height 0.2s 0s linear;
 }
-/* line 380, ../../src/sass/_general.scss */
+/* line 379, ../../src/sass/_general.scss */
 .feeds-instagram-like::before {
   content: '';
   width: 30px;
@@ -641,7 +640,7 @@ body.js-offline::after {
   border-radius: 100%;
 }
 
-/* line 396, ../../src/sass/_general.scss */
+/* line 395, ../../src/sass/_general.scss */
 .feeds-twitter-item {
   width: 240px;
   height: auto;
@@ -655,7 +654,7 @@ body.js-offline::after {
   -o-transition: background 0.2s 0s ease-out;
   transition: background 0.2s 0s ease-out;
 }
-/* line 405, ../../src/sass/_general.scss */
+/* line 404, ../../src/sass/_general.scss */
 .feeds-twitter-item::before {
   content: '';
   position: absolute;
@@ -672,29 +671,29 @@ body.js-offline::after {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 418, ../../src/sass/_general.scss */
+/* line 417, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover {
   background-color: #5f6a7d;
 }
-/* line 421, ../../src/sass/_general.scss */
+/* line 420, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover::before {
   border-right: 26px solid #5f6a7d;
 }
-/* line 423, ../../src/sass/_general.scss */
+/* line 422, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover .tweet a {
   color: #FAFAFA;
 }
-/* line 425, ../../src/sass/_general.scss */
+/* line 424, ../../src/sass/_general.scss */
 .feeds-twitter-item:hover p {
   color: #FAFAFA;
 }
-/* line 428, ../../src/sass/_general.scss */
+/* line 427, ../../src/sass/_general.scss */
 .feeds-twitter-item .user {
   position: absolute;
   bottom: -70px;
   left: 53px;
 }
-/* line 433, ../../src/sass/_general.scss */
+/* line 432, ../../src/sass/_general.scss */
 .feeds-twitter-item .user img {
   width: 48px;
   height: 48px;
@@ -705,16 +704,16 @@ body.js-offline::after {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 440, ../../src/sass/_general.scss */
+/* line 439, ../../src/sass/_general.scss */
 .feeds-twitter-item .user a {
   text-decoration: none;
   color: #2586b7;
 }
-/* line 445, ../../src/sass/_general.scss */
+/* line 444, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span {
   display: none;
 }
-/* line 448, ../../src/sass/_general.scss */
+/* line 447, ../../src/sass/_general.scss */
 .feeds-twitter-item .user span[data-scribe="element:screen_name"] {
   font-size: 0.8rem;
   font-family: "OpenSansRegular";
@@ -723,7 +722,7 @@ body.js-offline::after {
   margin-left: 10px;
   display: inline-block;
 }
-/* line 459, ../../src/sass/_general.scss */
+/* line 458, ../../src/sass/_general.scss */
 .feeds-twitter-item p {
   font-size: 0.8rem;
   line-height: 1.4rem;
@@ -733,28 +732,28 @@ body.js-offline::after {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 466, ../../src/sass/_general.scss */
+/* line 465, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet {
   padding: 20px;
 }
-/* line 469, ../../src/sass/_general.scss */
+/* line 468, ../../src/sass/_general.scss */
 .feeds-twitter-item p.tweet a {
   color: #2586b7;
 }
 
-/* line 480, ../../src/sass/_general.scss */
+/* line 479, ../../src/sass/_general.scss */
 .contact {
   padding: 70px 0;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   background-color: #FAFAFA;
 }
-/* line 486, ../../src/sass/_general.scss */
+/* line 485, ../../src/sass/_general.scss */
 .contact .content {
   margin: 0 auto;
 }
 
-/* line 492, ../../src/sass/_general.scss */
+/* line 491, ../../src/sass/_general.scss */
 .contact-form {
   margin-top: 30px;
 }
