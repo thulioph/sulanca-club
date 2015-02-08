@@ -35,7 +35,7 @@ APP.Contact = {
     if ($('body').hasClass('js-offline') == false) {
       that.sendForm(formdata);
     } else {
-      APP.Storage.insertLocalStorage(email, formdata);
+      APP.Storage.convertString(email, formdata);
     }
   },
 

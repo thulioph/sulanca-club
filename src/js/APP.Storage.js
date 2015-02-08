@@ -7,11 +7,11 @@ APP.Storage = {
   setUp: function() {},
 
   // convert return of ajax to string
-  convertString: function(chave, html) {
+  convertString: function(chave, formdata) {
     var that, string;
 
     that = this;
-    string = JSON.stringify(html);
+    string = JSON.stringify(formdata);
 
     that.insertLocalStorage(chave, string);
   },
@@ -56,7 +56,8 @@ APP.Storage = {
 
     for (var i = 0; i < localStorage.length; i++){
       data.push(localStorage.getItem(localStorage.key(i)));
-      APP.Contact.sendForm(data);
+      APP.Contact.sendForm(JSON.parse(localStorage.getItem(localStorage.key(i))));
+      // APP.Contact.sendForm(data);
     }
 
     console.log('Data: ', data);
