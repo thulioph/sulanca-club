@@ -65,7 +65,8 @@ $mens = "
     $cabecalho .= "Content-type: text/html; charset=uft-8$quebra_linha";
 
     $envia = mail("jbernardo360@gmail.com", "Sulanca - Contato Site", utf8_decode($mens),$cabecalho,"-r".$emailsender);
-    // $envia .= mail("email2@gmail.com", "Contato site", utf8_decode($mens),$cabecalho,"-r".$emailsender);
+    $envia .= mail("sulancaclub@gmail.com", "Contato site", utf8_decode($mens),$cabecalho,"-r".$emailsender);
+    $envia .= mail("luizborbajr@gmail.com", "Contato site", utf8_decode($mens),$cabecalho,"-r".$emailsender);
 
 
     if($envia){
