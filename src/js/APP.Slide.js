@@ -12,10 +12,12 @@ APP.Slide = {
     $('#slide').slick({
       dots: true,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
       infinite: true,
       speed: 500,
       fade: true,
-      slide: 'figure',
+      slide: 'a',
       cssEase: 'ease-out'
     });
   }
