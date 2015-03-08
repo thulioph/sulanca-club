@@ -453,7 +453,7 @@ body.js-offline::after {
   width: 150px;
   height: 150px;
   background-size: 150px 150px;
-  background-image: url("../../src/images/logo-primary.png");
+  background-image: url("../../dist/images/logo-primary.png");
   background-repeat: no-repeat;
 }
 
@@ -512,7 +512,7 @@ body.js-offline::after {
   display: none;
   text-indent: -9999px;
   background-position: center;
-  background-image: url("../../src/images/logo-secondary.png");
+  background-image: url("../../dist/images/logo-secondary.png");
   background-repeat: no-repeat;
 }
 
@@ -797,7 +797,7 @@ body.js-offline::after {
   top: 3px;
   left: 0;
   background-size: 20px 20px;
-  background-image: url("../../src/images/heart.svg");
+  background-image: url("../../dist/images/heart.svg");
   background-repeat: no-repeat;
 }
 
@@ -885,7 +885,7 @@ body.js-offline::after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px 40px;
-  background-image: url("../../src/images/icon-arrow.svg");
+  background-image: url("../../dist/images/icon-arrow.svg");
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.2s 0s linear;
   -moz-transition: opacity 0.2s 0s linear;

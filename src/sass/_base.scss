@@ -39,7 +39,7 @@ $color-clean:                   $white;
 
 // Background Images
 @mixin path ($rulers...) {
-  background-image: url("../../src/images/"+$rulers);
+  background-image: url("../../dist/images/"+$rulers);
   background-repeat: no-repeat;
 }
 
