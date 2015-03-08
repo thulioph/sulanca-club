@@ -335,9 +335,10 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 65px;
+  font-family: "OpenSansRegular";
 }
 
-/* line 23, ../../src/sass/_form.scss */
+/* line 24, ../../src/sass/_form.scss */
 input,
 textarea {
   -webkit-transition: border 0.2s 0s linear;
@@ -347,7 +348,7 @@ textarea {
   transition: border 0.2s 0s linear;
 }
 
-/* line 32, ../../src/sass/_form.scss */
+/* line 33, ../../src/sass/_form.scss */
 .btn-primary {
   text-transform: uppercase;
   padding: 5px 20px;
@@ -371,7 +372,7 @@ textarea {
   transition: background 0.2s 0s ease;
 }
 
-/* line 49, ../../src/sass/_form.scss */
+/* line 50, ../../src/sass/_form.scss */
 .input-primary {
   height: 40px;
   padding: 5px 10px;
@@ -379,15 +380,15 @@ textarea {
   outline: none;
   font-size: 1rem;
 }
-/* line 56, ../../src/sass/_form.scss */
+/* line 57, ../../src/sass/_form.scss */
 .input-primary.small {
   width: 30%;
 }
-/* line 57, ../../src/sass/_form.scss */
+/* line 58, ../../src/sass/_form.scss */
 .input-primary.medium {
   width: 50%;
 }
-/* line 58, ../../src/sass/_form.scss */
+/* line 59, ../../src/sass/_form.scss */
 .input-primary.big {
   width: 100%;
 }
