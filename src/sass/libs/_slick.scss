@@ -5,6 +5,12 @@
 .slide-primary {
   overflow: hidden;
   position: relative;
+
+  a {
+    display: inline-block;
+    width: 960px;
+    height: 400px;
+  }
 }
 
 .slide-image {
@@ -28,9 +34,9 @@
     margin: 5px;
 
     button {
-      width: 30px;
+      width: 20px;
       cursor: pointer;
-      height: 30px;
+      height: 20px;
       border: none;
       outline: none;
       text-indent: -9999px;

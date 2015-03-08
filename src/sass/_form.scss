@@ -2,17 +2,17 @@
 //     Forms
 // —————————————————————————
 
-// ::-webkit-input-placeholder { color: $gray-primary; }
+::-webkit-input-placeholder { color: $color-primary; }
 
-// :-moz-placeholder { color: $gray-primary; }
+:-moz-placeholder { color: $color-primary; }
 
-// ::-moz-placeholder { color: $gray-primary; }
+::-moz-placeholder { color: $color-primary; }
 
-// :-ms-input-placeholder { color: $gray-primary; }
+:-ms-input-placeholder { color: $color-primary; }
 
 %input-state {
   outline: none;
-  // border: 1px solid $link-primary;
+  border: 1px solid $color-primary;
 }
 
 textarea {
@@ -35,8 +35,7 @@ textarea {
   text-align: center;
   border: none;
   margin: 0 auto;
-  // color: $bg-clean;
-  // background-color: $link-primary;
+  background-color: $color-clean;
   font-size: ($fs-extra-small)-.2;
   font-family: $ff-primary;
   display: block;
@@ -52,9 +51,7 @@ textarea {
   padding: 5px 10px;
   margin-bottom: 10px;
   outline: none;
-  // border: 1px solid $border-primary;
   font-size: ($fs-extra-small)-.2;
-  @include bdr(5px);
 
   &.small { width: 30%; }
   &.medium { width: 50%; }
